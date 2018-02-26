@@ -16,5 +16,5 @@
 	  return primes;
 	}
 	
-	console.log(getPrimes(10)) // result: 2, 3, 5, 7
+	// getPrimes(10): 2, 3, 5, 7
 

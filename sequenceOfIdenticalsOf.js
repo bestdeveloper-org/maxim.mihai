@@ -1,22 +1,24 @@
 
 
 
-	var array = [1,2,2,2,2,2,3,3,3,3,3,3,3,];
+	var numbers = [1,2,2,2,2,2,3,3,3,3,3,3,3,];
 	
-	function sequenceOfIdenticalsOf(element) {
-	  if(!element) return [];
-	  if(element.length == 1) return element;
+	function sequenceOfIdenticalsOf(array) {
+	  if(!array) return [];
+	  if(array.length == 1) return array;
 	  
-	  var responseArray = [];
+	  var blankArray = [];
 	  var max = 1;
 	  
-	  for(i = 0; i < element.length; i++) {
-		if(element[i] === element[i-1]) {
+	  for(i = 0; i < array.length; i++) {
+		if(array[i] === array[i - 1]) {
 		  max++;
 		} else {
 		  max = 1;
 		}
-		responseArray.push(max)
+		blankArray.push(max)
 	  }
-	  return responseArray;
+	  return blankArray;
 	}
+	
+	// sequenceOfIdenticalsOf(numbers): 1, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7

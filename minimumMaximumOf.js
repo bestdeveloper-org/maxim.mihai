@@ -1,11 +1,15 @@
 
 
-	var array = [10, 17, 26, 29];
+	var numbers = [10, 17, 26, 29];
 
-	function minimumOf(element) {
-	  return Math.min.apply(null, element)
+	function minimumOf(array) {
+	  return Math.min.apply(null, array)
 	}
+	
+	// minimumOf(numbers): 10
 
-	function maximumOf(element) {
-	  return Math.max.apply(null, element)
+	function maximumOf(array) {
+	  return Math.max.apply(null, array)
 	}
+	
+	// maximumOf(numbers): 29

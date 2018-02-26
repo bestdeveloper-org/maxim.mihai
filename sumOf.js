@@ -5,5 +5,5 @@
 	  return n + getSum(n - 1);
 	}
 	
-	console.log(getSum(5)); // result: 15
+	// getSum(5): 15
 

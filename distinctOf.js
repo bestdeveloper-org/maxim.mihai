@@ -1,6 +1,6 @@
 
 
-	var array = [1, 2, 2, 2, 3, 3];
+	var numbers = [1, 2, 2, 2, 3, 3];
 
 	function distinctOf(element) {
 	  function onlyUnique(value, index, self) {
@@ -8,7 +8,11 @@
 	  }
 	  return element.filter(onlyUnique);
 	}
+	
+	//	distinctOf(numbers): 1, 2, 3
 
-	function otherDistinctOf(element) {
-	  return [...new Set(element)]
+	function otherDistinctOf(array) {
+	  return [...new Set(array)]
 	}
+	
+	//	otherDistinctOf(numbers): 1, 2, 3

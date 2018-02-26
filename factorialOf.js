@@ -5,4 +5,4 @@
 	  return n * factorial(n - 1);
 	}
 	
-	console.log(factorial(5)); // result: 120
+	//	factorial(5): 120
